@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label layoutX="31.0" layoutY="24.0" prefHeight="17.0" prefWidth="129.0" text="Введите узел:" />
+      <TextField fx:id="textFieldNode" layoutX="160.0" layoutY="20.0" prefHeight="25.0" prefWidth="223.0" />
+      <Button fx:id="buttonAddNode" layoutX="422.0" layoutY="20.0" mnemonicParsing="false" onAction="#clickOnButtonAddNode" prefHeight="25.0" prefWidth="103.0" text="Добавить" />
+      <Label layoutX="72.0" layoutY="65.0" text="Узлы:" />
+      <Label fx:id="labelNodes" layoutX="122.0" layoutY="65.0" />
+      <Button fx:id="buttonStartFS" layoutX="227.0" layoutY="94.0" mnemonicParsing="false" onAction="#clickOnButtonStartFS" prefHeight="37.0" prefWidth="112.0" text="Запуск ФС" />
+      <TreeView fx:id="treeViewNodesFiles" layoutX="34.0" layoutY="148.0" prefHeight="227.0" prefWidth="503.0" />
+      <TextField fx:id="textFieldCopy" layoutX="157.0" layoutY="398.0" prefHeight="25.0" prefWidth="380.0" />
+      <Button layoutX="10.0" layoutY="398.0" mnemonicParsing="false" onAction="#clickOnCopyButton" prefHeight="25.0" prefWidth="112.0" text="Скопировать" />
+      <Label layoutX="130.0" layoutY="393.0" text="-&gt;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="130.0" layoutY="428.0" text="-&gt;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="10.0" layoutY="433.0" mnemonicParsing="false" onAction="#clickOnRenameButton" prefHeight="25.0" prefWidth="112.0" text="Переименовать" />
+      <TextField fx:id="textFieldRename" layoutX="157.0" layoutY="433.0" prefHeight="25.0" prefWidth="380.0" />
+      <Button layoutX="10.0" layoutY="470.0" mnemonicParsing="false" onAction="#clickOnDeleteButton" prefHeight="25.0" prefWidth="112.0" text="Удалить" />
+      <Button layoutX="347.0" layoutY="495.0" mnemonicParsing="false" onAction="#clickOnRunButton" prefHeight="45.0" prefWidth="138.0" text="Выполнить" />
+      <ListView fx:id="listViewCompliteCommand" layoutX="549.0" layoutY="148.0" prefHeight="307.0" prefWidth="200.0" />
+   </children>
+</Pane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="433.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Button layoutX="89.0" layoutY="224.0" mnemonicParsing="false" onAction="#clickStartButton" prefHeight="40.0" prefWidth="110.0" text="Start" />
+      <Button layoutX="249.0" layoutY="224.0" mnemonicParsing="false" onAction="#clickUpdateButton" prefHeight="40.0" prefWidth="110.0" text="Update Mins" />
+      <Label layoutX="75.0" layoutY="63.0" text="Last min" />
+      <Label layoutX="75.0" layoutY="120.0" text="Global min" />
+      <Label fx:id="lableLocalMin" layoutX="217.0" layoutY="63.0" />
+      <Label fx:id="lableGlobalMin" layoutX="221.0" layoutY="120.0" />
+   </children>
+</Pane>
